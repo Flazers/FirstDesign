@@ -24,6 +24,6 @@
         <Button Width="100" Height="30" Content="Кнопка"/>
 
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
-
+        
     </DockPanel>
 </Window>
