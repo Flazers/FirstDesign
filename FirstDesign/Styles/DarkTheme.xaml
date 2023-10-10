@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="BackgroundColor">#263238</Color>
+    <Color x:Key="Panel1Color">#37474f</Color>
+    <Color x:Key="Panel2Color">#455a64</Color>
+    
+    <SolidColorBrush x:Key="Background" Color="{DynamicResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="Panel1" Color="{DynamicResource Panel1Color}"/>
+    <SolidColorBrush x:Key="Panel2" Color="{DynamicResource Panel2Color}"/>
+
+
+    <Color x:Key="TextColor">#fbfcfd</Color>
+    <SolidColorBrush x:Key="Text" Color="{DynamicResource TextColor}"/>
+
+
+    <Color x:Key="BasicColor">#FFFFFF</Color>
+    <Color x:Key="HoverColor">#D1D1D1</Color>
+    <Color x:Key="PressedColor">#E6E6E6</Color>
+    <Color x:Key="DisabledColor">#858585</Color>
+    
+    <SolidColorBrush x:Key="Basic" Color="{DynamicResource BasicColor}"/>
+    <SolidColorBrush x:Key="Hover" Color="{DynamicResource HoverColor}"/>
+    <SolidColorBrush x:Key="Pressed" Color="{DynamicResource PressedColor}"/>
+    <SolidColorBrush x:Key="Disabled" Color="{DynamicResource DisabledColor}"/>
+
+
+    <Color x:Key="TextBtnColor">#2a2d48</Color>
+    <SolidColorBrush x:Key="TextBtn" Color="{DynamicResource TextBtnColor}"/>
+
+</ResourceDictionary>

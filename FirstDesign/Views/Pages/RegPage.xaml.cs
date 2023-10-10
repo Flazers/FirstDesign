@@ -24,5 +24,23 @@ namespace FirstDesign.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+            if (r_login == null || r_password == null || r_nickname == null)
+            {
+                MessageBox.Show("Заполните пустые поля");
+                return;
+            }
+
+            MessageBox.Show("Такой логин уже существует.");
+            MessageBox.Show("Регистрация успешно прошла.");
+            NavigationService.Navigate(new AuthPage());
+        }
+        private void SwapBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AuthPage());
+        }
+
     }
 }

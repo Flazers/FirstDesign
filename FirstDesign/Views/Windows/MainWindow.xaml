@@ -5,25 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstDesign.Views.Windows"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Icon="../../Assets/Images/Logo_barbie.png"
         Title="MainWindow" Height="450" Width="800">
-    <DockPanel LastChildFill="True" Background="#263238">
-
-        <DockPanel Height="50" Background="#37474f" DockPanel.Dock="Top">
-            <Button Margin="10 0" HorizontalAlignment="Right" Content="Назад" 
-                    x:Name="backBtn" Click="backBtn_Click" Width="100" Height="30"/>
-        </DockPanel>
-
-        <DockPanel Height="50" Background="#37474f" DockPanel.Dock="Bottom">
-            <Button Margin="10 0" HorizontalAlignment="Right" Content="Выйти" 
-                    x:Name="exitBtn" Click="exitBtn_Click" Width="100" Height="30"/>
-        </DockPanel>
-
-        <TextBlock Margin="10"/>
-
-        <Button Width="100" Height="30" Content="Кнопка"/>
- 
+    <DockPanel LastChildFill="True" Background="{DynamicResource Background}">
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
-         
     </DockPanel>
 </Window>

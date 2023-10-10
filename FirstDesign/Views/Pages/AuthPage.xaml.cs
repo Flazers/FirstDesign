@@ -24,5 +24,19 @@ namespace FirstDesign.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void auth_Click(object sender, RoutedEventArgs e)
+        {
+            if (login.Text == "1" && password.Text == "1")
+            {
+                MessageBox.Show("Добро пожаловать, ");
+                NavigationService.Navigate(new MainPage());
+            } 
+        }
+
+        private void SwapBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RegPage());
+        }
     }
 }

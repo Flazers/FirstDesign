@@ -8,22 +8,20 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AuthPage">
 
-    <Grid>
-        <Border Padding="10" Height="220" Width="260" Background="#37474f" CornerRadius="20">
-            <DockPanel>
-                <StackPanel DockPanel.Dock="Top">
-                    <TextBlock Text="Войти в аккаунт" 
-                               HorizontalAlignment="Center" Style="{DynamicResource TitleText}"/>
-                    <TextBlock Text="Логин" Margin="0 5 0 5"/>
-                    <TextBox Height="30" FontSize="16"/>
-                    <TextBlock Text="Пароль" Margin="0 10 0 5"/>
-                    <TextBox Height="30" FontSize="16"/>
-                </StackPanel> 
-                <DockPanel VerticalAlignment="Bottom">
-                    <Button Style="{DynamicResource Btn}" HorizontalAlignment="Left" Content="Регистрация" Width="100"/>
-                    <Button Style="{DynamicResource Btn}" HorizontalAlignment="Right" Content="Войти" Width="80"/>
-                </DockPanel>
-            </DockPanel>
+    <DockPanel>
+        <Border Width="300" VerticalAlignment="Center" Style="{DynamicResource BorderPanel}">
+            <StackPanel>
+                <TextBlock Text="Войти в аккаунт" 
+                           HorizontalAlignment="Center" Style="{DynamicResource TitleText}"/>
+                <TextBlock Text="Логин" Margin="0 5 0 5"/>
+                <TextBox Height="30" x:Name="login" FontSize="16"/>
+                <TextBlock Text="Пароль" Margin="0 10 0 5"/>
+                <TextBox Height="30" x:Name="password" FontSize="16"/>
+                <Button Margin="0 30 0 0" x:Name="auth" Click="auth_Click" Content="Войти"/>
+                <Separator Margin="0 20" Background="{DynamicResource Panel2}"/>
+                <TextBlock HorizontalAlignment="Center" Text="Нет аккаунта?"/>
+                <Button Margin="0 10 0 0" x:Name="SwapBtn" Click="SwapBtn_Click" Content="Регистрация"/>
+            </StackPanel>
         </Border>
-    </Grid>
+    </DockPanel>
 </Page>

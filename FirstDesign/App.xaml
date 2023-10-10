@@ -7,7 +7,11 @@
         
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles/slow.xaml"/>
+                
+                <ResourceDictionary Source="Styles/DarkTheme.xaml"/> 
+                
+                <ResourceDictionary Source="Styles/StyleOne.xaml"/>
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
          

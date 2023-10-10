@@ -24,5 +24,19 @@ namespace FirstDesign.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void profilepage_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void news_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void logout_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
